@@ -12,8 +12,10 @@ android {
         applicationId = "com.caspian.notemind"
         minSdk = 33
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        // 每次发新版都把 versionCode 加一，这样覆盖安装会走正常升级流程，
+        // 应用私有数据（filesDir 下的笔记）原样保留。
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
